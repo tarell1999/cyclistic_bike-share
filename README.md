@@ -37,5 +37,5 @@ My data cleaning process consisted of:
 -	Creating appropriate column names
 -	Keeping only data that will identify how annual members and causal riders use Cyclistic bikes differently
 -	Creating a duration column
--	Excluding tips less than 1 minute or over 24 hours
+-	Excluding trips less than 1 minute or over 24 hours
 -	Creating a day of the week column
