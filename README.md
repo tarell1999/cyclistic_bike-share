@@ -39,3 +39,41 @@ My data cleaning process consisted of:
 -	Creating a duration column
 -	Excluding trips less than 1 minute or over 24 hours
 -	Creating a day of the week column
+
+```mysql:
+CREATE TABLE updated_cyclistic_table
+  SELECT
+    DISTINCT ride_id,
+    rideable_type,
+    start_station_name,
+    end_station_name,
+    started_at,
+    ended_at,
+    member_casual,
+    TIME_TO_SEC((timediff(ended_at,started_at))) as ride_length,
+    dayofweek(started_at)
+  FROM
+    combined_cyclistic_data
+  WHERE
+    (start_station_name IS NOT NULL 
+    AND end_station_name IS NOT NULL)
+    AND
+    (ended_at - started_at > 0)
+    AND
+    (TIME_TO_SEC(timediff(ended_at,started_at))) < 86400
+    AND 
+    (TIME_TO_SEC(timediff(ended_at,started_at))) > 59
+```
+This resulted in removing 1,399,540 rows (5,733,451 -> 4,333,911). A loss of 32.29% of data
+
+### ANALYZE
+
+The data needed to be visualized so I used Tableau.
+
+To start with the question of how annual riders and casual riders use Cyclistic bike differently I looked at a 12-month period and a weekday usage of membership riders vs. causal riders:
+
+[12-month period chart] [Day of the week chart]
+
+
+During this 12-month period, casual riders peaked in July with 306,594 rides and membership riders peaked in August with 328,576. Following causal riders’ peak there was a 13% drop in riders. Following membership riders peak there was only a 6% drop in number of rides.
+
