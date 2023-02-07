@@ -43,7 +43,7 @@ My data cleaning process consisted of:
 ```mysql:
 CREATE TABLE updated_cyclistic_table
   SELECT
-    DISTINCT ride_id,
+    ride_id,
     rideable_type,
     start_station_name,
     end_station_name,
@@ -72,8 +72,7 @@ The data needed to be visualized so I used Tableau.
 
 To start with the question of how annual riders and casual riders use Cyclistic bike differently I looked at a 12-month period and a weekday usage of membership riders vs. causal riders:
 
-[12-month period chart] [Day of the week chart]
-
+<img width="953" alt="Screenshot 2023-02-07 at 1 17 00 PM" src="https://user-images.githubusercontent.com/121827009/217336415-e10723b5-b712-4beb-921a-20dec49b3e7c.png">
 
 During this 12-month period, casual riders peaked in July with 306,594 rides and membership riders peaked in August with 328,576. Following causal riders’ peak there was a 13% drop in riders. Following membership riders peak there was only a 6% drop in number of rides.
 
