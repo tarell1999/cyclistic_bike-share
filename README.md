@@ -74,5 +74,14 @@ To start with the question of how annual riders and casual riders use Cyclistic 
 
 <img width="953" alt="Screenshot 2023-02-07 at 1 17 00 PM" src="https://user-images.githubusercontent.com/121827009/217336415-e10723b5-b712-4beb-921a-20dec49b3e7c.png">
 
-During this 12-month period, casual riders peaked in July with 306,594 rides and membership riders peaked in August with 328,576. Following causal riders’ peak there was a 13% drop in riders. Following membership riders peak there was only a 6% drop in number of rides.
+During this 12-month period, casual riders peaked in July with 306,594 rides and membership riders peaked in August with 328,576. Following causal riders’ peak there was a 13% drop in riders. Following membership riders peak there was only a 6% drop in number of rides. The greater drop off in causal riders shows what’s expected, membership riders tend to be more consistent.
 
+During the days of the week, member riders and causal riders peaked at different times. Member riders bike usage tend to peak on Wednesdays while causal riders peaked on Saturdays. This difference represents a behavior of member riders preferring to ride bikes toward the middle of the week and casual riders preferring to ride bikes towards the weekend. This difference in behavior is so significant that causal riders actually outnumbered member riders on Saturdays and Sundays.
+
+<img width="567" alt="Screenshot 2023-02-09 at 4 11 17 PM" src="https://user-images.githubusercontent.com/121827009/218826883-d9e434be-6f22-4f65-8b0e-ac58fde94f76.png">
+
+Focusing on the change from previous month’s bike usage there’s a pattern. Starting in February, bike usage consistently trends upward towards the warmer months then it starts to drop in September for member riders. For causal riders the trend stops in August. This could be an opportunity to target marking towards causal riders. The largest increase in casual riders happens in March. March can also be an opportunity to target causal riders. 
+
+<img width="725" alt="Screenshot 2023-02-14 at 1 26 19 PM" src="https://user-images.githubusercontent.com/121827009/218827597-eff99cd9-533c-4d22-ab17-de748efe928c.png">
+
+Looking at bike type usage members used electric bikes 34% of the time while casual riders use electric bikes 39% of the time. This is not a substantial difference, but it shows that causal rides tend to use eclectic bikes more than membership riders. This is likely due to electrics bikes price greater cost that is charged to all users.
