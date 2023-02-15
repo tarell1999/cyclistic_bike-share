@@ -14,7 +14,7 @@ Understand how annual members and casual riders use Cyclistic bikes differently 
 
 These insights will drive business decisions by informing us:
 
-1. The differences between annual members vs. causal riders
+1. The differences between membership riders vs. causal riders
 2. How bikes are used at Cyclistic
 3. Why causal riders would buy a membership
 4. How digital media can effect Cyclistic’s marketing tactics
@@ -35,7 +35,7 @@ My data cleaning process consisted of:
 -	Assigning column datatypes
 -	Applying correct formatting
 -	Creating appropriate column names
--	Keeping only data that will identify how annual members and causal riders use Cyclistic bikes differently
+-	Keeping only data that will identify how membership riders and causal riders use Cyclistic bikes differently
 -	Creating a duration column
 -	Excluding trips less than 1 minute or over 24 hours
 -	Creating a day of the week column
@@ -64,13 +64,12 @@ CREATE TABLE updated_cyclistic_table
     AND 
     (TIME_TO_SEC(timediff(ended_at,started_at))) > 59
 ```
-This resulted in removing 1,399,540 rows (5,733,451 -> 4,333,911). A loss of 32.29% of data
 
 ### ANALYZE
 
 The data needed to be visualized so I used Tableau.
 
-To start with the question of how annual riders and casual riders use Cyclistic bike differently I looked at a 12-month period and a weekday usage of membership riders vs. causal riders:
+To start with the question of how membership riders and casual riders use Cyclistic bike differently I looked at a 12-month period and a weekday usage of membership riders vs. causal riders:
 
 <img width="953" alt="Screenshot 2023-02-07 at 1 17 00 PM" src="https://user-images.githubusercontent.com/121827009/217336415-e10723b5-b712-4beb-921a-20dec49b3e7c.png">
 
@@ -90,5 +89,20 @@ Looking at bike type usage members used electric bikes 34% of the time while cas
 
 Focusing on ride lengths between 1 minute and 24 hours, another difference between membership riders and causal riders is average ride length. Casual riders tend to ride bikes for a longer time. This was consistent for every month. On average causal riders used bikes 11 minutes longer than membership riders. 
 
-This difference is likely due to the 30 minutes causal riders are covered when using a bike. After 30 minutes of using a bike, casual riders are charged for every minute over. Casual riders are encouraged to use bikes for longer due to make there initial fee worth it. Membership riders do not have an initial fee.
+This difference is likely due to the 30 minutes causal riders pay for to intailly use a bike. After 30 minutes of using a bike, casual riders are charged for every minute over. Casual riders are encouraged to use bikes for longer due to make there initial fee worth it. Membership riders do not have an initial fee.
 
+### SHARE 
+
+To answer the question asked at the beginning of this project, how do annual members and casual riders use Cyclistic bikes differently? 
+
+Key differences: 
+-	Causal riders favor using Cyclistic bikes on the weekends (Saturdays and Sundays) while membership riders favor using bikes towards the middle on the week, peaking on Wednesdays
+-	Causal riders use Cyclistic bikes about 11 minutes longer than membership riders
+-	Casual riders peaked in July and membership riders peaked in August
+
+### ACT 
+
+My recommendations to the marking team:
+1.	Discounted electric bikes to membership riders on the weekends
+2.	Offer discounted memberships leading up to the warmer months
+3.	Advertise that members don’t pay an initial fee to use classic bikes
