@@ -85,3 +85,10 @@ Focusing on the change from previous month’s bike usage there’s a pattern. S
 <img width="725" alt="Screenshot 2023-02-14 at 1 26 19 PM" src="https://user-images.githubusercontent.com/121827009/218827597-eff99cd9-533c-4d22-ab17-de748efe928c.png">
 
 Looking at bike type usage members used electric bikes 34% of the time while casual riders use electric bikes 39% of the time. This is not a substantial difference, but it shows that causal rides tend to use eclectic bikes more than membership riders. This is likely due to electrics bikes price greater cost that is charged to all users.
+
+<img width="615" alt="Screenshot 2023-02-14 at 6 03 27 PM" src="https://user-images.githubusercontent.com/121827009/218882971-0bc7d52f-709d-42f5-b678-236efdeabbbc.png">
+
+Focusing on ride lengths between 1 minute and 24 hours, another difference between membership riders and causal riders is average ride length. Casual riders tend to ride bikes for a longer time. This was consistent for every month. On average causal riders used bikes 11 minutes longer than membership riders. 
+
+This difference is likely due to the 30 minutes causal riders are covered when using a bike. After 30 minutes of using a bike, casual riders are charged for every minute over. Casual riders are encouraged to use bikes for longer due to make there initial fee worth it. Membership riders do not have an initial fee.
+
